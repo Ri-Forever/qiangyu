@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".app.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/MainViewTabStyle"
+            android:drawableTop="@drawable/selector_main_view_tab_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/tab_shop_cart"
+            style="@style/MainViewTabStyle"
+            android:drawableTop="@drawable/selector_main_view_tab_shopcart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/MainViewTabStyle"
+            android:drawableTop="@drawable/selector_main_view_tab_my"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

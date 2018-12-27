@@ -1,0 +1,319 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiangyu.my.fragment.MyFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="46dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f00">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/user_index_top_bg" />
+
+                <!--未登录显示-->
+                <ImageButton
+                    android:id="@+id/ib_login_registration"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/logo"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_login_registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_login_registration"
+                    android:layout_centerHorizontal="true"
+                    android:text="登录/注册"
+                    android:textColor="#fff"
+                    android:visibility="visible" />
+
+                <!--已登录显示-->
+                <ImageButton
+                    android:id="@+id/ib_user_head_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/logo"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_user_head_image"
+                    android:layout_centerHorizontal="true"
+                    android:text="用户名名称"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_all_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/home_arrow_right"
+                    android:text="查看全部订单"
+                    android:textColor="#5d5d5d" />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_user_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/user_index_top_01"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_user_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/user_index_top_02"
+                    android:gravity="center"
+                    android:text="待收货"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:id="@+id/tv_all_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/user_index_top_03"
+                    android:gravity="center"
+                    android:text="全部订单"
+                    android:textColor="#5d5d5d" />
+
+                <!--<TextView
+                    android:id="@+id/tv_user_drawback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/new_order_status_help"
+                    android:gravity="center"
+                    android:text="售后/退款"
+                    android:textColor="#5d5d5d" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/new_order_status_fahuo"
+                    android:gravity="center"
+                    android:text="待发货"
+                    android:textColor="#5d5d5d" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_wallet"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/hyzx_01"
+                android:text="钱包" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_demand"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/gl"
+                android:text="我发布的需求" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_construction_sheet"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/gl1"
+                android:text="我的施工单"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_qr_code"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/icon_qr"
+                android:text="我的二维码"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_setting"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/user_index_sz"
+                android:text="设置" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_gengxin"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/update"
+                android:text="版本更新" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_guanyu"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/guanyu"
+                android:text="关于我们" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_cancellation"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/user_index_zxdl"
+                android:text="注销登录" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <!--<TextView
+                android:id="@+id/tv_user_feedback"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/user_channel_icon_feedback"
+                android:text="服务反馈" />
+
+            <TextView
+                android:id="@+id/tv_user_invitation"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/user_channel_icon_invitation"
+                android:text="邀请分享" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_coupon"
+                style="@style/TextStyle"
+                android:drawableLeft="@mipmap/user_channel_icon_coupon"
+                android:text="我的优惠券"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ed3f3f"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp">
+
+            <!--<ImageButton
+                android:id="@+id/ib_user_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/new_user_setting" />-->
+
+            <!--<ImageButton
+                android:id="@+id/ib_user_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/new_message_icon" />-->
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

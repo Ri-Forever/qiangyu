@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!--线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_gov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_selector"
+            android:checked="true"
+            android:clickable="false" />
+
+        <ImageView
+            android:id="@+id/iv_gov"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_desc_gov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="抢鱼商城APP"
+                android:textColor="#404040"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_price_gov"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="￥0.0"
+                android:textColor="#f00"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.qiangyu.shopcart.view.AddSubView
+                    android:id="@+id/add_sub_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_subtraction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/goods_sub_btn" />
+
+                    <!-- android:imeOptions -->
+                    <EditText
+                        android:id="@+id/edit_value"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_bg"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="5"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/goods_add_btn" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/words1"
+                    android:text="删除"
+                    android:textColor="#303235"
+                    android:textSize="15sp" />
+                <!--<ImageButton
+                    android:id="@+id/ib_delete_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/del" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#22000000" />
+</LinearLayout>

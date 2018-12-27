@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="camera_photos" path="" />
+    <external-path name="my_images" path="Android/data/demo/files/Pictures/" />
+    <external-path name="images" path="Pictures/" />
+    <external-path name="dcim" path="DCIM/" />
+</paths>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">抢鱼商城</string>
+    <string name="zhucexieyi"><u>注册账号</u></string>
+
+    <string name="check_new_version">正在检测版本</string>
+    <string name="there_no_new_version">当前已经是最新版本了哦</string>
+    <string name="dialog_choose_update_title">发现了新版本</string>
+    <string name="dialog_choose_update_content">升级</string>
+    <string name="dialog_btn_confirm_download">升级</string>
+    <string name="dialog_btn_cancel_download">忽略</string>
+
+    <string name="title">提示</string>
+    <string name="confirm">确定</string>
+    <string name="updateNow">立即更新</string>
+    <string name="laterSay">稍后更新</string>
+    <string name="ignorable">忽略</string>
+</resources>

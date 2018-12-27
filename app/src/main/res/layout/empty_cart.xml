@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty_shopcart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/konggouwuche" />
+
+        <!--        <TextView
+                    android:id="@+id/tv_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_empty"
+                    android:gravity="center"
+                    android:text="购物车里神马都木有"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_text1"
+                    android:gravity="center"
+                    android:text="解开封印买买买b(~▽~)d"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />-->
+
+        <!--android:background="@drawable/shape_rec_textview"-->
+        <!--550*140-->
+        <TextView
+            android:id="@+id/tv_empty_cart_tobuy"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/quguangguang"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ed3f3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

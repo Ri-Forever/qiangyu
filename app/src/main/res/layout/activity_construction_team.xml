@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<CheckBox
+            android:id="@+id/checkbox_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_selector"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:paddingLeft="0dp"
+            android:text="选择"
+            android:textColor="#303235"
+            android:textSize="15sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mingzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="施工队:  "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_dianhua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="联系电话:  "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_baojia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="订单报价:  "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_riqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="报价日期:  "
+                android:textColor="#000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<TextView
+                    android:id="@+id/tv_chakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="查看施工队详情"
+                    android:textColor="#ff7700" />-->
+
+                <TextView
+                    android:id="@+id/tv_chakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/blackground_textview_frame"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="查看施工队详情"
+                    android:textColor="#fa7801" />
+
+                <TextView
+                    android:id="@+id/tv_xuanze"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/blackground_textview_frame"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="朕选你了"
+                    android:textColor="#fa7801" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
